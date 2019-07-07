@@ -9,7 +9,7 @@ class RegDemo:
         pass
     @staticmethod
     def get_args():
-        parser=argparse.ArgumentParser(description='Query the registry')
+        parser=argparse.ArgumentParser(description='Query registry')
         parser.add_argument("-e", "--enum", help="Enumerate all keys")
         parser.add_argument("-q","--query",nargs=2,help="Query registry")
         return parser.parse_args()
