@@ -1,3 +1,5 @@
+#*in progress*
+
 test_connectivity() {
   target=$1
   if ping -c 1 -W 3 $target > /dev/null 2>&1; then
@@ -6,4 +8,4 @@ test_connectivity() {
     echo "$target Unreachable"
   fi
 }
-  
+
